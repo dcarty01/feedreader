@@ -1,9 +1,18 @@
 # Project Overview
 
-In this project I was given a web-based application that reads RSS feeds. I cloned the original files [here](https://github.com/udacity/frontend-nanodegree-feedreader) and followed the directions provided in the README file. This project utilized [Jasmine](http://jasmine.github.io/) to test the application. 
+This project is a web-based application that reads RSS feeds. This project utilized [Jasmine](http://jasmine.github.io/) to test the application. 
 
 # Why This Project Was Beneficial
 Throughout the course for the Front-End Web Developer Nanodegree Program at [Udacity](http://www.udacity.com), I learned that testing is an important part of the development process. Many organizations practice a standard of development known as "test-driven development". This is when developers write tests first, before they ever start developing their application. All the tests initially fail and then they start writing application code to make these tests pass. I learned how to use Jasmine to write a number of tests against a pre-existing application. These will test the underlying business logic of the application as well as the event handling and DOM manipulation.
+
+# To run this unit test, take the following steps...
+[Clone](https://github.com/udacity/frontend-nanodegree-feedreader) this repo to your computer and open the folder in your text editor of choice.
+The file called feedreader.js is where you will be doing your testing. You do not need to alter app.js or style.css but look at these documents to help you run your tests.
+Verify the four tests listed in feedreader.js file. These tests include...
+    1. Loop through each feed in the allFeeds object and ensures it has a URL defined and that the URL is not empty. Loop through each feed in the allFeeds object and ensures it has a name defined and that the name is not empty.
+    2. Ensure the menu element is hidden by default. You'll have to analyze the HTML and the CSS to determine how we're performing the hiding/showing of the menu element. Ensure the menu changes visibility when the menu icon is clicked.
+    3. Ensure when the loadFeed function is called and completes its work, there is at least a single .entry element within the .feed container. Remember, loadFeed() is asynchronous so this test wil require the use of Jasmine's beforeEach and asynchronous done() function.
+    4. Ensure when a new feed is loaded by the loadFeed function that the content actually changes. Remember, loadFeed() is asynchronous.
 
 # The Things I Did To Complete This Project
 
