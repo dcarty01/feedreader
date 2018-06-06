@@ -55,7 +55,7 @@ $(function () {
             });
         });
         it('define if entry has more than 0 entries', function () {
-            expect($('.entry .feed')).toBeDefined();
+            expect($('.feed .entry').length).toBeGreaterThan(0);
         });
     });
 
@@ -64,14 +64,14 @@ $(function () {
         beforeEach(function (done) {
             $('.feed').empty();
             loadFeed(0, function () {
-                entriesStart = $('.feed').find(allFeeds.url);
-                done();
-            });
-            loadFeed(1, function () {
-                entriesEnd = $('.feed').find(allFeeds.url);
-                done();
+                entriesStart = $('.feed').html();
+                    loadFeed(1, function () {
+                        entriesEnd = $('.feed').html();
+                        done();
+                    });
             });
         });
+
         it('new feed is different to old one', function () {
             expect(entriesStart).not.toBe(entriesEnd);
         });
