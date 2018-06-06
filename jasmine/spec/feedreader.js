@@ -71,7 +71,6 @@ $(function () {
                     });
             });
         });
-
         it('new feed is different to old one', function () {
             expect(entriesStart).not.toBe(entriesEnd);
         });
