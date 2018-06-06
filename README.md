@@ -5,7 +5,7 @@ This project is a web-based application that reads RSS feeds. This project utili
 # Why This Project Was Beneficial
 Throughout the course for the Front-End Web Developer Nanodegree Program at [Udacity](http://www.udacity.com), I learned that testing is an important part of the development process. Many organizations practice a standard of development known as "test-driven development". This is when developers write tests first, before they ever start developing their application. All the tests initially fail and then they start writing application code to make these tests pass. I learned how to use Jasmine to write a number of tests against a pre-existing application. These will test the underlying business logic of the application as well as the event handling and DOM manipulation.
 
-# To run this unit test, take the following steps...
+# Direction On How To Run This Test
 [Clone](https://github.com/udacity/frontend-nanodegree-feedreader) this repo to your computer and open the folder in your text editor of choice.
 The file called feedreader.js is where you will be doing your testing. You do not need to alter app.js or style.css but look at these documents to help you run your tests.
 Verify the four tests listed in feedreader.js file. These tests include...
